@@ -15,7 +15,6 @@ RUN yum clean all && \
 FROM quay.io/ukhomeofficedigital/openjdk8-jre:v0.2.5
 WORKDIR /opt/
 COPY --from=base /opt/sonar-scanner-${SONAR_SCANNER_VER}/bin . 
-
 # Install sonar-scanner
 RUN wget -O /tmp/sonar-scanner-cli-${SONAR_SCANNER_VER}.zip \
     https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VER}.zip && \
