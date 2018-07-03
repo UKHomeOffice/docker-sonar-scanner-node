@@ -10,9 +10,9 @@ pipeline:
       - ${DRONE_COMMIT_SHA}
       - latest
     when:
-      event: [push, tag]
+      event: push 
 
-  build_tag:
+  tag:
     environment:
       - DOCKER_USERNAME= quay.io/ukhomeofficedigital+drone
     image: quay.io/ukhomeofficedigital/drone-docker
