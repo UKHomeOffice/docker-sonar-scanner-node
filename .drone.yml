@@ -12,6 +12,12 @@ pipeline:
     when:
       event: push 
 
+  # scan:
+  #   image: quay.io/ukhomeofficedigital/anchore-submission:latest
+  #   image_name: quay.io/ukhomeofficedigital/sonar-scanner-node:${DRONE_COMMIT_SHA} 
+  #   when:
+  #     event: push
+
   tag:
     environment:
       - DOCKER_USERNAME= quay.io/ukhomeofficedigital+drone
