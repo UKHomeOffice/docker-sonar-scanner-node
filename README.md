@@ -1,5 +1,7 @@
 # docker-sonar-scanner-node
 
+**This repo has been deprecated in favour of the [docker-sonar-scanner repo](https://github.com/UKHomeOffice/docker-sonar-scanner). If you require any extras packages, Feel free to fork the repo**
+
 Enables integration with SonarQube including node.js packages required for Typescript code reviews.
 
 ### Usage
